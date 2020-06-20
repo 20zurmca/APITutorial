@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Top Rentals At DVDLand</title>
+  </head>
+  <body>
+  <table>
+  <tr>
+      <th>Film Title</th>
+      <th>Description</th>
+      <th>Release Year</th>
+      <th>Running Time</th>
+      <th>MPAA Rating</th>
+      <th>Number of Times Rented</th>
+  </tr>
+  {% for rental in rentals %}
+  <tr>
+  <td>{{rental[0]}}</td>
+  <td>{{rental[1]}}</td>
+  <td>{{rental[2]}}</td>
+  <td>{{rental[3]}}</td>
+  <td>{{rental[4]}}</td>
+  <td>{{rental[5]}}</td>
+  </tr>
+  {% endfor %}
+  </table>
+
+  </body>
+</html>
